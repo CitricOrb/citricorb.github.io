@@ -5,6 +5,8 @@ function setup() {
   createCanvas(windowWidth, windowHeight); // Make the canvas the size of the window
   millisMarker = millis();
 
+  noCursor();
+
   vid = createVideo('vppr.mp4');
   vid.position(0, 0); // Make sure the video is positioned correctly
 }
