@@ -12,7 +12,7 @@ function setup() {
 
 function draw() {
   background(0); // Clear the background to avoid artifacts
-  
+
   if (millis() - millisMarker > 990) {
     vid.pause();
   }
@@ -23,4 +23,9 @@ function keyPressed() {
     millisMarker = millis();
     vid.play();
   }
+}
+
+function mousePressed() {
+  millisMarker = millis();
+  vid.play();
 }
