@@ -6,12 +6,13 @@ function setup() {
   millisMarker = millis();
 
   vid = createVideo('vppr.mp4');
-  vid.size(windowWidth, windowHeight);
   vid.position(0, 0); // Make sure the video is positioned correctly
 }
 
 function draw() {
   background(0); // Clear the background to avoid artifacts
+  
+  vid.size(windowWidth, windowHeight);
 
   if (millis() - millisMarker > 990) {
     vid.pause();
